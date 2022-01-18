@@ -1,5 +1,5 @@
 pipeline {
-  node('master')
+  node('master') {
   
   stages {
     stage('Ola') {
@@ -12,5 +12,5 @@ pipeline {
       }
     }
   }  
-    
+  }
   }
