@@ -1,0 +1,11 @@
+---
+- hosts: nginx-srv
+  tasks:
+    - name: Instalar NGINX SVC
+      apt:
+        name: nginx
+        state: present
+    - name: Iniciar Servico
+      service:
+        name: nginx
+        state: stopped
