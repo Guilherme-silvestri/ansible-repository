@@ -5,7 +5,7 @@ pipeline {
     stage('Ola') {
       steps {
         sh '''
-          ansible-playbook /home/guilherme/aula-ansible/install-apt.yaml --ask-sudo-pass
+          cat /dev/null > /var/log/syslog
 
           '''
       }
