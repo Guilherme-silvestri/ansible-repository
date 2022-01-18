@@ -5,9 +5,8 @@ pipeline {
     stage('Ola') {
       steps {
         sh '''
-          ansible --version
-          ansible-playbook --version
-          ansible-galaxy --version
+          sh ansible-playbook /home/guilherme/aula-ansible/install-apt.yaml --ask-sudo-pass
+
           '''
       }
     }
